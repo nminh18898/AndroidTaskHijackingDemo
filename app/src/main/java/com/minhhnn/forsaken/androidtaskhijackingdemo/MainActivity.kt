@@ -5,6 +5,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.minhhnn.forsaken.androidtaskhijackingdemo.databinding.ActivityMainBinding
 
+/**
+ * A malicious app disguised at a simple calculator. This app can hijack facebook app task and trick user to give their username and password
+ */
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityMainBinding

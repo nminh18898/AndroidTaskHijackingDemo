@@ -1,10 +1,7 @@
 package com.minhhnn.forsaken.androidtaskhijackingdemo
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.add
-import androidx.fragment.app.commit
-import com.minhhnn.forsaken.androidtaskhijackingdemo.databinding.ActivityMainBinding
+import androidx.appcompat.app.AppCompatActivity
 import com.minhhnn.forsaken.androidtaskhijackingdemo.databinding.ActivityPhishingFacebookBinding
 
 class PhishingFacebookActivity : AppCompatActivity() {
@@ -19,12 +16,5 @@ class PhishingFacebookActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-    }
-
-     fun inflatePhishingFragment(){
-        supportFragmentManager.commit {
-            setReorderingAllowed(true)
-            add<PhishingFacebookFragment>(R.id.fragment_container_view)
-        }
     }
 }

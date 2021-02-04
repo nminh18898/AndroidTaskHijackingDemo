@@ -28,7 +28,7 @@
 
     <!-- Phishing resource color-->
     <color name="facebook_primary_color">#3b5998</color>
-    <color name="facebook_primary_color_light">#253BFF</color>
+    <color name="facebook_primary_color_light">#0080ff</color>
     <color name="facebook_secondary_color">#ffffff</color>
-    <color name="facebook_edit_text_color">#676767</color>
+    <color name="facebook_edit_text_color">#8A8989</color>
 </resources>

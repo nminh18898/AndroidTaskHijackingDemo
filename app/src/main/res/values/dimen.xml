@@ -3,4 +3,6 @@
     <dimen name="splash_screen_icon_height">100dp</dimen>
     <dimen name="splash_screen_icon_width">100dp</dimen>
 
+    <dimen name="phishing_facebook_default_view_margin">24dp</dimen>
+
 </resources>
