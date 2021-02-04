@@ -31,4 +31,18 @@
     <color name="facebook_primary_color_light">#0080ff</color>
     <color name="facebook_secondary_color">#ffffff</color>
     <color name="facebook_edit_text_color">#8A8989</color>
+
+
+    <color name="colorCalculatorBackground">@android:color/white</color>
+    <color name="colorCalculatorNumberCurrentText">@android:color/black</color>
+    <color name="colorCalculatorNumberHistoryText">@android:color/darker_gray</color>
+    <color name="colorCalculatorButtonMemory">@color/PrimaryColor</color>
+    <color name="colorCalculatorButtonNumber">@color/PrimaryColorDark</color>
+    <color name="colorCalculatorButtonAction">@color/PrimaryColorLight</color>
+    <color name="colorCalculatorButtonsArea">@color/colorLightGrey</color>
+    <color name="colorCalculatorButtonsText">@android:color/white</color>
+
+    <color name="colorTeal">#009688</color>
+    <color name="colorLightGrey">#E0E0E0</color>
+    <color name="colorBlueGrey">#607D8B</color>
 </resources>

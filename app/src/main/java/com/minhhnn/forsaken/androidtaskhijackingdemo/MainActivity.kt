@@ -7,6 +7,8 @@ import com.minhhnn.forsaken.androidtaskhijackingdemo.databinding.ActivityMainBin
 
 /**
  * A malicious app disguised at a simple calculator. This app can hijack facebook app task and trick user to give their username and password
+ * This app just be used for research purpose, calculation function is not implement.
+ * Thanks @baruckis (https://github.com/baruckis/Android-Calculator) for the layout
  */
 class MainActivity : AppCompatActivity() {
 
