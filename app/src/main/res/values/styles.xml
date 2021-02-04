@@ -1,0 +1,32 @@
+<resources>
+
+    <style name="Widget.Theme.AndroidTaskHijackingDemo.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="SplashscreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splashscreen</item>
+    </style>
+
+    <style name="FacebookTheme" parent="Theme.AppCompat.Light.NoActionBar">
+<!--        &lt;!&ndash; Primary brand color. &ndash;&gt;
+        <item name="colorPrimary">@color/facebook_primary_color</item>
+        <item name="colorPrimaryVariant">@color/facebook_primary_color_light</item>
+        <item name="colorOnPrimary">#ffffff</item>
+
+        &lt;!&ndash; Secondary brand color. &ndash;&gt;
+        <item name="colorSecondary">@color/facebook_secondary_color</item>
+        <item name="colorOnSecondary">#4E4E4E</item>-->
+
+    </style>
+</resources>
