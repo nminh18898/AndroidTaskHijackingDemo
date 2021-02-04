@@ -1,44 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    tools:context=".PhishingFacebookFragment"
-    android:gravity="center_horizontal">
+    tools:context=".PhishingFacebookFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+
+    android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="240dp">
 
         <ImageView
-            app:layout_constraintTop_toTopOf="parent"
             android:layout_width="match_parent"
             android:layout_height="240dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/phishing_fb_login_illus_2"
-            android:scaleType="centerCrop"/>
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
+            android:src="@drawable/phishing_fb_icon_2"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:src="@drawable/phishing_fb_icon_2"/>
+            app:layout_constraintTop_toTopOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/facebook_phishing_request_re_login"
-        android:textSize="15dp"
         android:layout_marginLeft="@dimen/phishing_facebook_default_view_margin"
-        android:layout_marginRight="@dimen/phishing_facebook_default_view_margin"
         android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/phishing_facebook_default_view_margin"
+        android:text="@string/facebook_phishing_request_re_login"
         android:textColor="#FD5757"
+        android:textSize="15dp"
         android:textStyle="italic"/>
 
     <EditText
@@ -46,10 +53,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/phishing_facebook_default_view_margin"
-        android:layout_marginRight="@dimen/phishing_facebook_default_view_margin"
         android:layout_marginTop="10dp"
-        android:hint="@string/facebook_phishing_hint_input_phone_email"
-        android:backgroundTint="@color/facebook_edit_text_color">
+        android:layout_marginRight="@dimen/phishing_facebook_default_view_margin"
+        android:backgroundTint="@color/facebook_edit_text_color"
+        android:hint="@string/facebook_phishing_hint_input_phone_email">
     </EditText>
 
     <EditText
@@ -57,10 +64,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/phishing_facebook_default_view_margin"
-        android:layout_marginRight="@dimen/phishing_facebook_default_view_margin"
         android:layout_marginTop="10dp"
-        android:hint="@string/facebook_phishing_hint_input_password"
+        android:layout_marginRight="@dimen/phishing_facebook_default_view_margin"
         android:backgroundTint="@color/facebook_edit_text_color"
+        android:hint="@string/facebook_phishing_hint_input_password"
         android:inputType="textPassword">
     </EditText>
 
@@ -68,36 +75,36 @@
         android:id="@+id/bt_log_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/facebook_primary_color_light"
-        android:textSize="15dp"
-        android:text="@string/facebook_phishing_log_in"
-        android:textColor="#ffffff"
-        android:textAllCaps="false"
-        android:textStyle="bold"
         android:layout_marginLeft="@dimen/phishing_facebook_default_view_margin"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="@dimen/phishing_facebook_default_view_margin"
-        android:layout_marginTop="10dp"
-        android:padding="2dp"/>
+        android:backgroundTint="@color/facebook_primary_color_light"
+        android:padding="2dp"
+        android:text="@string/facebook_phishing_log_in"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
 
 
     <TextView
         android:id="@+id/tv_forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="15sp"
+        android:layout_marginLeft="@dimen/phishing_facebook_default_view_margin"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/phishing_facebook_default_view_margin"
         android:text="@string/facebook_phishing_forgot_password"
         android:textColor="@color/facebook_primary_color_light"
-        android:layout_marginLeft="@dimen/phishing_facebook_default_view_margin"
-        android:layout_marginRight="@dimen/phishing_facebook_default_view_margin"
-        android:layout_marginTop="10dp"/>
+        android:textSize="15sp"
+        android:textStyle="bold"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical|center_horizontal"
-        android:layout_marginTop="20dp"
         android:layout_marginLeft="@dimen/phishing_facebook_default_view_margin"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="@dimen/phishing_facebook_default_view_margin">
 
         <View
@@ -113,11 +120,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:text="@string/facebook_phishing_or"
-            android:textSize="14sp"
-            android:textColor="@color/facebook_edit_text_color"
             android:layout_marginLeft="4dp"
-            android:layout_marginRight="4dp"/>
+            android:layout_marginRight="4dp"
+            android:text="@string/facebook_phishing_or"
+            android:textColor="@color/facebook_edit_text_color"
+            android:textSize="14sp"/>
 
         <View
             android:layout_width="wrap_content"
@@ -131,14 +138,16 @@
         android:id="@+id/bt_sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#20B326"
-        android:textSize="15dp"
-        android:text="@string/facebook_phishing_create_new_account"
-        android:textColor="#ffffff"
-        android:textAllCaps="false"
-        android:textStyle="bold"
         android:layout_marginLeft="@dimen/phishing_facebook_default_view_margin"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="@dimen/phishing_facebook_default_view_margin"
-        android:layout_marginTop="20dp"/>
+        android:backgroundTint="#20B326"
+        android:text="@string/facebook_phishing_create_new_account"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
 
 </LinearLayout>
+
+</ScrollView>
