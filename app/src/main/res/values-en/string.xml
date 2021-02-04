@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="facebook_phishing_request_re_login">Your session has timed out. Please login again.</string>
     <string name="facebook_phishing_hint_input_phone_email">Phone or email</string>
     <string name="facebook_phishing_hint_input_password">Password</string>
     <string name="facebook_phishing_log_in">Log In</string>

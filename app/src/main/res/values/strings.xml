@@ -5,6 +5,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string name="facebook_phishing_request_re_login">Phiên làm việc đã hết hạn. Vui lòng đăng nhập lại.</string>
     <string name="facebook_phishing_hint_input_phone_email">Số điện thoại hoặc email</string>
     <string name="facebook_phishing_hint_input_password">Mật khẩu</string>
     <string name="facebook_phishing_log_in">Đăng nhập</string>
